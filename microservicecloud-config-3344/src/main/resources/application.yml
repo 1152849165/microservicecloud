@@ -3,4 +3,5 @@ server:
 
 spring:  application:    name: microservicecloud-config
   cloud:    config:      server:        git:          uri:  https://github.com/1152849165/microservicecloud-config.git
+#git@github.com:1152849165/microservicecloud-config.git
 

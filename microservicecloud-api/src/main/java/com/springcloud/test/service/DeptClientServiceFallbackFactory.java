@@ -22,11 +22,10 @@ public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptCli
 			
 			@Override
 			public Dept get(Long id) {
-//				return null;
 				Dept dept = new Dept();
 				dept.setDeptno(id);
-				dept.setDname("该ID："+id+"没有对应信息，Consumer客户端提供的降级信息");
-				dept.setDname("no this database in MySQL");
+				dept.setDname("该ID"+id+"没有对饮的信息，Cpnsumer客户端提供的降级信息");
+				dept.setDb_source("no this database in MySQL");
 				return dept;
 			}
 			
