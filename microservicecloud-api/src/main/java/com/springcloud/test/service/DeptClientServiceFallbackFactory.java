@@ -9,7 +9,8 @@ import com.springcloud.test.entities.Dept;
 import feign.hystrix.FallbackFactory;
 
 @Component
-public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptClientService>{
+public class DeptClientServiceFallbackFactory  implements FallbackFactory<DeptClientService> {
+
 
 	@Override
 	public DeptClientService create(Throwable cause) {

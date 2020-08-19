@@ -8,9 +8,10 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import com.springcloud.myrule.MySelfRule;
 
 
-@SpringBootApplication
+
 @EnableEurekaClient
 @RibbonClient(name = "MICROSERVICECLOUD-DEPT",configuration = MySelfRule.class)
+@SpringBootApplication
 public class DeptConsumer80_App {
 	public static void main(String[] args) {
 		SpringApplication.run(DeptConsumer80_App.class, args);

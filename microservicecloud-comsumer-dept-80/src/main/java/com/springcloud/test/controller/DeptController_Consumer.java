@@ -10,6 +10,8 @@ import org.springframework.web.client.RestTemplate;
 
 import com.springcloud.test.entities.Dept;
 
+
+
 @RestController
 public class DeptController_Consumer {
 //	private static final String REST_URL_PREFIX = "http://localhost:8001";
@@ -22,6 +24,7 @@ public class DeptController_Consumer {
 	 */
 	@Autowired
 	private RestTemplate restTemplate;
+	
 	
 	@RequestMapping(value = "/consumer/dept/add")
 	public boolean add(Dept dept) {

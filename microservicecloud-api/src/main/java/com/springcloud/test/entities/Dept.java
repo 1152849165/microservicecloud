@@ -2,16 +2,17 @@ package com.springcloud.test.entities;
 
 import java.io.Serializable;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
+//import lombok.AllArgsConstructor;
+//import lombok.Data;
+//import lombok.NoArgsConstructor;
+//import lombok.experimental.Accessors;
 
-@SuppressWarnings(value = "serial")
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-@Accessors(chain = true)
+//@SuppressWarnings(value = "serial")
+//@AllArgsConstructor
+//@NoArgsConstructor
+//@Data
+//@Accessors(chain = true)
+@SuppressWarnings("serial")
 public class Dept implements Serializable{  //继承改接口 是序列化该实体类（必须）
 	private Long deptno; //主键。
 	private String dname;  //部门名称。
